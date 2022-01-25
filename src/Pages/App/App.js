@@ -5,6 +5,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import HomePage from './../HomePage/HomePage'
 import ConstructeursPage from './../ConstructeursPage/ConstructeursPage'
 import ConstructeursAddForm from './../ConstructeursAddForm/ConstructeursAddForm'
+import ConstructeursUpForm from './../ConstructeursUpForm/ConstructeursUpForm'
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
                 <Route
                   path="/constructeurs/add"
                   element={<ConstructeursAddForm />}
+                ></Route>
+                <Route
+                  path="/constructeurs/update/:id"
+                  element={<ConstructeursUpForm />}
                 ></Route>
               </Routes>
             </Col>
